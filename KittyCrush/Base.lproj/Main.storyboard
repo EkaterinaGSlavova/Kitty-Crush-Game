@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="KittyCrush" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWu-D0-SVf">
+                                <rect key="frame" x="271" y="20" width="58" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.12887426909999999" green="0.38010903820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN8-eK-YFt">
+                                <rect key="frame" x="20" y="20" width="59" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.12887426909999999" green="0.38010903820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDk-oi-r4X">
+                                <rect key="frame" x="532" y="20" width="50" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.12887426909999999" green="0.38010903820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akX-gg-qGO">
+                                <rect key="frame" x="265" y="48" width="70" height="24"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" red="0.12887426909999999" green="0.38010903820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zM-lB-zkG">
+                                <rect key="frame" x="510" y="45" width="70" height="24"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" red="0.12887426909999999" green="0.38010903820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-zj-aOg">
+                                <rect key="frame" x="20" y="48" width="70" height="24"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" red="0.12887426909999999" green="0.38010903820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="akh-r2-071">
+                                <rect key="frame" x="0.0" y="230" width="600" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="bo3-mg-bP3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-TG-aHQ">
+                                <rect key="frame" x="250" y="533" width="100" height="35"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="20"/>
+                                <state key="normal" title="Shuffle" backgroundImage="button"/>
+                                <connections>
+                                    <action selector="shuffleButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="lw9-h2-7Gf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbY-qb-f1T">
+                                <rect key="frame" x="20" y="550" width="50" height="30"/>
+                                <state key="normal" image="on"/>
+                                <state key="selected" image="off"/>
+                                <connections>
+                                    <action selector="soundButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="DQZ-6j-CHb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fP-nk-EE0">
+                                <rect key="frame" x="250" y="533" width="100" height="35"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="Next Level" backgroundImage="button">
+                                    <color key="titleColor" red="0.98432697747275488" green="1" blue="0.99063696323574391" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextLevelPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="KTP-Ht-8YA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldS-e9-8gU">
+                                <rect key="frame" x="480" y="533" width="100" height="35"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="Start Over" backgroundImage="button"/>
+                                <connections>
+                                    <action selector="StartOverPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="P1b-Fe-DXd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQE-hN-GGi">
+                                <rect key="frame" x="532" y="548" width="48" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="K2e-TG-aHQ" secondAttribute="bottom" constant="32" id="1h4-j8-Joj"/>
+                            <constraint firstItem="3fP-nk-EE0" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="4A8-pd-hoY"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="ldS-e9-8gU" secondAttribute="bottom" constant="32" id="4sE-ja-r8u"/>
+                            <constraint firstAttribute="trailing" secondItem="akh-r2-071" secondAttribute="trailing" id="CUO-9I-JSc"/>
+                            <constraint firstItem="aDk-oi-r4X" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="20" id="DRf-F6-fJ2"/>
+                            <constraint firstAttribute="trailing" secondItem="ldS-e9-8gU" secondAttribute="trailing" constant="20" id="GEk-DW-dYn"/>
+                            <constraint firstItem="akX-gg-qGO" firstAttribute="top" secondItem="qWu-D0-SVf" secondAttribute="bottom" constant="8" id="GZI-62-oQ9"/>
+                            <constraint firstAttribute="trailing" secondItem="aDk-oi-r4X" secondAttribute="trailing" constant="18" id="IVM-rZ-wi3"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="3fP-nk-EE0" secondAttribute="bottom" constant="32" id="Mjp-Hq-uOC"/>
+                            <constraint firstItem="RN8-eK-YFt" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="20" id="N0h-QV-Ddq"/>
+                            <constraint firstAttribute="trailing" secondItem="CQE-hN-GGi" secondAttribute="trailing" constant="20" id="SwA-yA-KFH"/>
+                            <constraint firstItem="c6u-zj-aOg" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="20" id="YMb-dI-pHj"/>
+                            <constraint firstItem="akX-gg-qGO" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="dXV-OK-Zyl"/>
+                            <constraint firstItem="qWu-D0-SVf" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="topMargin" constant="20" id="i5M-UD-b8W"/>
+                            <constraint firstItem="c6u-zj-aOg" firstAttribute="top" secondItem="RN8-eK-YFt" secondAttribute="bottom" constant="8" id="jAG-VL-7G2"/>
+                            <constraint firstItem="qWu-D0-SVf" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="ldb-PL-aXd"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="vbY-qb-f1T" secondAttribute="bottom" constant="20" id="nXb-K6-fi5"/>
+                            <constraint firstItem="3fP-nk-EE0" firstAttribute="bottom" secondItem="K2e-TG-aHQ" secondAttribute="bottom" id="o1f-zF-aTx"/>
+                            <constraint firstItem="RN8-eK-YFt" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="20" id="okG-XF-CsN"/>
+                            <constraint firstItem="vbY-qb-f1T" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="20" id="pj1-B5-d6N"/>
+                            <constraint firstItem="K2e-TG-aHQ" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="qT7-r7-Oaq"/>
+                            <constraint firstAttribute="trailing" secondItem="1zM-lB-zkG" secondAttribute="trailing" constant="20" id="r9O-8m-hR8"/>
+                            <constraint firstItem="1zM-lB-zkG" firstAttribute="top" secondItem="aDk-oi-r4X" secondAttribute="bottom" constant="5" id="s1u-U3-hbq"/>
+                            <constraint firstItem="akh-r2-071" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="sH4-By-hzM"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="CQE-hN-GGi" secondAttribute="bottom" constant="32" id="soV-8c-9z3"/>
+                            <constraint firstItem="akh-r2-071" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="yOa-Gr-glu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="StartOverButton" destination="ldS-e9-8gU" id="Bi6-Na-MXO"/>
+                        <outlet property="gameOverImageView" destination="akh-r2-071" id="LIw-yx-tn2"/>
+                        <outlet property="levelLabel" destination="CQE-hN-GGi" id="MyA-WV-KIf"/>
+                        <outlet property="movesLabel" destination="akX-gg-qGO" id="1Ip-Ht-n7m"/>
+                        <outlet property="nextLevelButton" destination="3fP-nk-EE0" id="2u0-dk-CpY"/>
+                        <outlet property="scoreLabel" destination="1zM-lB-zkG" id="grZ-gr-BnA"/>
+                        <outlet property="shuffleButton" destination="K2e-TG-aHQ" id="LEB-8O-dvG"/>
+                        <outlet property="soundButton" destination="vbY-qb-f1T" id="hMx-uV-vEb"/>
+                        <outlet property="targetLabel" destination="c6u-zj-aOg" id="hnM-Bo-tGi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="331"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="100" height="35"/>
+        <image name="off" width="50" height="30"/>
+        <image name="on" width="50" height="30"/>
+    </resources>
+</document>
